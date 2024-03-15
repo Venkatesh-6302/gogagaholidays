@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gogaga Holidays</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Gogaga Holidays</h1>
+            <nav>
+                <ul>
+                    <li ><a href="#holidays-packages">Holidays Packages</a></li>
+                    <li ><a href="#flight-booking">Flight Booking</a></li>
+                    <li ><a href="#hotel-booking">Hotel Booking</a></li>
+                    <li ><a href="#package-collections"> Package Collections</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="holiday-packages">
+            <!--Content-->
+            <h2>Holiday Packages</h2>
+            <div class="package">
+                <h3>Package 1</h3>
+                <p>Explore the wonders of Italy with our exclusive package. Visit historic landmarks, enjoy authentic cuisine, and experience the vibrant culture.</p>
+                <p>Price:15000 Rs</p>
+                <img src="https://img.freepik.com/free-/cityscape-rome-ancient-centre-italy_1268-20482.jpg?t=st=1710473693~exp=1710477293~hmac=abe610fe34ba1d4b2c32578826006164b52dd1056375a52c6513a1907f181d97&w=1060" alt="Package 1 Image">
+            </div>
+            <div class="package">
+                <h3>Package 2</h3>
+                <p>Escape to the tropical paradise of Bali with our luxury package. Relax on pristine beaches, indugle in spa treatments, and discover the beauty of the island.</p>
+                <p>Price:25000 Rs</p>
+                <img src="https://img.freepik.com/free-photo/tanah-lot-temple-bali-island-indonesia_335224-394.jpg?t=st=1710473535~exp=1710477135~hmac=62841b428a69584228496282d25056331eba4ca8d7872818ca2ba47b11d5b759&w=1060" alt="Package 2 Image">
+            </div>
+            <div class="package">
+                <h3>Package 3</h3>
+                <p>Embark on a advanture to the majestic mountains of Switzerland with our thrilling package. Enjoy skilling, snowboaeding, and breathing views.</p>
+                <p>Price:15000 Rs</p>
+                <img src="https://img.freepik.com/free-photo/beautiful-scenery-forest-snowy-alps-winter_181624-29223.jpg?t=st=1710473400~exp=1710477000~hmac=a9d13cbfaba78ee1dfaf67dd272a5ddb8728ab34f91002673fb2c91b7f6223f7&w=1380" alt="Package 3 Image">
+            </div>
+        </section>
+        <section id="flight-booking">
+            <h2>Flight Booking</h2>
+            <form id="flight-form">
+                <label for="departure">Departure:</label>
+                <input type="text" id="departure" name="departure">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <button type="submit">Search Flights</button>
+            </form>
+            <div id="flight-results" class="results"></div> <!--Results Container-->
+        </section>
+        <section id="hotel-booking">
+            <h2>Hotel Booking</h2>
+            <form id="hotel-form">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location">
+                <label for="check-in">Check-in:</label>
+                <input type="date" id="check-in" name="check-in">
+                <label for="check-out">Check-out:</label>
+                <input type="date" id="check-out" name="check-out">
+                <button type="submit">Search Hotels</button>
+            </form>
+            <div id="hotel-results" class="results"></div> <!--Results container-->
+
+        </section>
+        <section id="package-collections">
+            <!--Content-->
+            <h2>Package Collections</h2>
+            <div id="collection-tabs" class="tabs">
+                <button class="tablink" onclick="openCollection(event,'collection1')">Collection1</button>
+                <button class="tablink" onclick="openCollection(event,'collection2')">Collection2</button>
+                <button class="tablink" onclick="openCollection(event,'collection3')">Collection3</button>
+            </div>
+            <div id="collection1" class="collection-content">
+                <h3>Collection 1</h3>
+                <p>This is collection 1 content.</p>
+            </div>
+            <div id="collection2" class="collection-content" style="display: none;">
+                <h3>Collection 2</h3>
+                <p>This is collection 2 content.</p>
+            </div>
+            <div id="collection3" class="collection-content" style="display: none;">
+                <h3>Collection 3</h3>
+                <p>This is collection 3 content.</p>
+            </div>
+
+        </section>
+        <footer>
+            <p>&copy;2024 Gogaga Holidays. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
